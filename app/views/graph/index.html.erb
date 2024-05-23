@@ -1,4 +1,19 @@
-<div data-controller="graph">
-  <div class="cy"  data-graph-target='container' id="cy"></div>
-  <p>Здесь должен быть граф</p>
+  <style>
+      .graph-container {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+      }
+
+
+      .cy {
+          width: 80vw;
+          height: 80vh;
+          background-color: #f7f7f7;
+      }
+  </style>
+<div class="graph-container">
+  <div class="cy" data-controller="graph" data-graph-target="container" id="cy"></div>
 </div>
+
+

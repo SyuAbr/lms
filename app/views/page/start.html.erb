@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lms</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body class="pt-20 flex flex-col items-center justify-center">
+<div class="text-center">
+  <h1 class="text-red-500 text-6xl">
+    Добро пожаловать на курс разработки веб-приложений на Ruby on Rails
+  </h1>
+  <h2 class="text-5xl mt-4">
+    Начнём изучение?
+  </h2>
+</div>
+
+<div class="mt-auto mb-8 flex items-center justify-center">
+  <%= link_to login_path do %>
+    <button class="bg-red-500 text-white text-5xl rounded-full py-10 px-20 hover:scale-110 transition-transform duration-300">
+      Start
+    </button>
+  <% end %>
+</div>
+
+</body>
+</html>

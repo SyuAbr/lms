@@ -9,3 +9,6 @@ application.register("graph", GraphController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import NavigationController from "./navigation_controller"
+application.register("navigation", NavigationController)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="w-96 bg-white rounded-lg shadow-lg p-8">
+  <div class="bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold text-center text-3xl leading-none py-6 rounded-t-lg">
+    Регистрация
+  </div>
+  <%= form_with(model: User.new, url: signup_path, class: "p-6") do |form| %>
+    <div class="mb-4 relative">
+      <%= form.text_field :surname, class: "w-full h-12 px-4 py-2 border border-red-500 rounded-full bg-transparent text-black outline-none focus:border-red-500", placeholder: "Фамилия", required: true %>
+    </div>
+    <div class="mb-4 relative">
+      <%= form.text_field :name, class: "w-full h-12 px-4 py-2 border border-red-500 rounded-full bg-transparent text-black outline-none focus:border-red-500", placeholder: "Имя", required: true %>
+    </div>
+    <div class="mb-4 relative">
+      <%= form.text_field :middle_name, class: "w-full h-12 px-4 py-2 border border-red-500 rounded-full bg-transparent text-black outline-none focus:border-red-500", placeholder: "Отчество (если есть)" %>
+    </div>
+    <div class="mb-4 relative">
+      <%= form.email_field :email, class: "w-full h-12 px-4 py-2 border border-red-500 rounded-full bg-transparent text-black outline-none focus:border-red-500", placeholder: "Email", required: true %>
+    </div>
+    <div class="mb-4 relative">
+      <%= form.password_field :password, class: "w-full h-12 px-4 py-2 border border-red-500 rounded-full bg-transparent text-black outline-none focus:border-red-500", placeholder: "Пароль", required: true %>
+    </div>
+    <div class="field">
+      <%= form.submit "Register", class: "w-full inline-flex justify-center py-3 px-4 text-lg font-medium text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-full cursor-pointer transition-transform transform hover:scale-95" %>
+    </div>
+  <% end %>
+
+  <div class="mt-6 text-center text-black">
+    Уже зарегистриваны? <%= link_to "Войдите", login_path, class: "text-red-500 hover:underline" %>
+
+  </div>
+</div>
+</body>
+
+</html>
