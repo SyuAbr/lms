@@ -7177,3 +7177,249 @@ Processing by PageController#run_koans_tests as TURBO_STREAM
 Completed 200 OK in 7446ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 7150)
 
 
+Started GET "/" for 127.0.0.1 at 2024-05-31 03:20:01 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/start.html.erb within layouts/application
+  Rendered page/start.html.erb within layouts/application (Duration: 5792.3ms | Allocations: 262490)
+  Rendered layout layouts/application.html.erb (Duration: 5824.1ms | Allocations: 269233)
+Completed 200 OK in 5998ms (Views: 5871.5ms | ActiveRecord: 0.0ms | Allocations: 273917)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-05-31 03:20:10 +0300
+Processing by RegistrationController#login_form as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/login_form.html.erb within layouts/application
+  Rendered registration/login_form.html.erb within layouts/application (Duration: 121.9ms | Allocations: 3371)
+  Rendered layout layouts/application.html.erb (Duration: 145.3ms | Allocations: 9889)
+Completed 200 OK in 264ms (Views: 150.9ms | ActiveRecord: 5.1ms | Allocations: 27899)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-05-31 03:20:11 +0300
+Processing by RegistrationController#login as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"123456@mail.ru", "password"=>"[FILTERED]", "commit"=>"Войти"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "123456@mail.ru"], ["LIMIT", 1]]
+  ↳ app/controllers/registration_controller.rb:23:in `login'
+Redirected to http://127.0.0.1:3000/graph
+Completed 302 Found in 353ms (ActiveRecord: 0.2ms | Allocations: 3928)
+
+
+Started GET "/graph" for 127.0.0.1 at 2024-05-31 03:20:12 +0300
+Processing by GraphController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering graph/index.html.erb within layouts/application
+  Rendered graph/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6812)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 7319)
+
+
+Started GET "/start" for 127.0.0.1 at 2024-05-31 03:20:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/start"):
+  
+Started GET "/koans" for 127.0.0.1 at 2024-05-31 03:20:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/koans"):
+  
+Started GET "/graph" for 127.0.0.1 at 2024-05-31 03:20:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/graph"):
+  
+Started GET "/" for 127.0.0.1 at 2024-05-31 03:20:50 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 269)
+Completed 200 OK in 35ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1002)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-31 03:21:10 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 7386)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 8294)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:50:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 413)
+  Rendered layout layouts/application.html.erb (Duration: 279.4ms | Allocations: 38869)
+Completed 200 OK in 459ms (Views: 324.3ms | ActiveRecord: 0.0ms | Allocations: 43554)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:50:54 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 7328)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 8238)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:32 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 476.5ms | Allocations: 13903)
+Completed 200 OK in 477ms (Views: 477.2ms | ActiveRecord: 0.0ms | Allocations: 14152)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:47 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 9343)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 9591)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:49 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 6881)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 7125)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:50 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6982)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 7226)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:51 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 6900)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 7147)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:52 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 6901)
+Completed 200 OK in 21ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 7145)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:52 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6866)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 7110)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:53 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6872)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 7116)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:54 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6988)
+Completed 200 OK in 25ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 7232)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:55:55 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6880)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 7124)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:56:57 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 6985)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 7229)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 00:57:26 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 9265)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 9509)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 02:28:02 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 9782)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 10691)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 02:30:12 +0300
+Processing by MermaidController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mermaid/index.html.erb within layouts/application
+  Rendered mermaid/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 7436)
+Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 8345)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-01 03:48:14 +0300
+Processing by PageController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/start.html.erb within layouts/application
+  Rendered page/start.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1104)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 7776)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 8688)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-06-01 03:48:16 +0300
+Processing by RegistrationController#login_form as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/login_form.html.erb within layouts/application
+  Rendered registration/login_form.html.erb within layouts/application (Duration: 32.2ms | Allocations: 2169)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 8801)
+Completed 200 OK in 182ms (Views: 54.6ms | ActiveRecord: 6.6ms | Allocations: 26721)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-06-01 03:48:18 +0300
+Processing by RegistrationController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1056)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 7571)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 7906)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-06-01 03:49:26 +0300
+Processing by RegistrationController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/new.html.erb within layouts/application
+  Rendered registration/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 7152)
+Completed 200 OK in 21ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 7419)
+
+

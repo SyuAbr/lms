@@ -10,5 +10,8 @@ application.register("graph", GraphController)
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
+import MermaidController from "./mermaid_controller"
+application.register("mermaid", MermaidController)
+
 import NavigationController from "./navigation_controller"
 application.register("navigation", NavigationController)

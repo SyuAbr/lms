@@ -1,8 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.cy{
+.cy {
     width: 800px;
-    height:600px
+    height: 600px
 }
 
+.completed > g > polygon {
+    fill: #00ff00 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.completed > g > rect  {
+    fill: #00ff00 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.blocked > g > polygon {
+    fill: #c3c3c3 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.blocked > g > rect  {
+    fill: #c3c3c3 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.open > g > polygon {
+    fill: #f57059 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+.open > g > rect  {
+    fill: #f57059 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.open > g > circle {
+    fill: #f57059 !important;
+    stroke: #000000 !important;
+    stroke-width: 2px !important;
+}
+
+.open > g > g > text {
+    fill: black !important;
+}

@@ -1,24 +1,111 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Геймифицированная LMS
 
-Things you may want to cover:
+Это геймифицированная система управления обучением (LMS), разработанная на Ruby on Rails. Приложение предоставляет платформу для управления обучением с элементами геймификации, чтобы сделать процесс обучения более увлекательным и мотивирующим.
 
-* Ruby version
+## Требования
 
-* System dependencies
+- Ruby 3.3.0
+- Rails ~> 7.1.3
+- Node.js и npm/yarn для управления JavaScript-пакетами
+- SQLite3 для базы данных (по умолчанию)
+- Bundler для управления гемами
 
-* Configuration
+## Установка
 
-* Database creation
+1. Склонируйте репозиторий на свой локальный компьютер:
 
-* Database initialization
+```sh
+git clone https://github.com/ваш-репозиторий.git
+cd ваш-репозиторий
+```
 
-* How to run the test suite
+2. Установите необходимые гемы:
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+bundle install
+```
 
-* Deployment instructions
+3. Установите зависимости JavaScript:
 
-* ...
+```sh
+yarn install
+```
+
+4. Создайте и настройте базу данных:
+
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+## Запуск приложения
+
+Для запуска сервера разработки выполните:
+
+```sh
+rails server
+```
+
+Откройте браузер и перейдите по адресу [http://localhost:3000](http://localhost:3000), чтобы увидеть ваше приложение в действии.
+
+Вы правы, `foreman` следует запускать раньше, чтобы он мог управлять всеми процессами, включая сервер Rails и сборку JavaScript/CSS. Мы обновим README файл, чтобы учесть это.
+
+### Обновленный README файл:
+
+---
+
+# Геймифицированная LMS
+
+Это геймифицированная система управления обучением (LMS), разработанная на Ruby on Rails. Приложение предоставляет платформу для управления обучением с элементами геймификации, чтобы сделать процесс обучения более увлекательным и мотивирующим.
+
+## Требования
+
+- Ruby 3.3.0
+- Rails ~> 7.1.3
+- Node.js и npm/yarn для управления JavaScript-пакетами
+- SQLite3 для базы данных (по умолчанию)
+- Bundler для управления гемами
+
+## Установка
+
+1. Склонируйте репозиторий на свой локальный компьютер:
+
+```sh
+git clone https://github.com/ваш-репозиторий.git
+cd ваш-репозиторий
+```
+
+2. Установите необходимые гемы:
+
+```sh
+bundle install
+```
+
+3. Установите зависимости JavaScript:
+
+```sh
+yarn install
+```
+
+4. Создайте и настройте базу данных:
+
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+## Запуск приложения
+
+Запустите `foreman` с использованием `Procfile.dev`:
+
+```sh
+foreman start -f Procfile.dev
+```
+
+Для запуска сервера разработки используйте:
+```sh
+rails server
+```

@@ -1,7 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
-
 export default class extends Controller {
     static targets = ['container'];
 
