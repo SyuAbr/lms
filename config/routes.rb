@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
 
   root 'page#start'
-  get 'signup', to: 'registration#new'
-  post 'signup', to: 'registration#create'
-  get 'login', to: 'registration#login_form'
-  post 'login', to: 'registration#login'
-  delete 'logout', to: 'registration#logout'
-  get '/graph', to: 'graph#index', as: 'graph'
+  get 'signup', to: 'user#new'
+  post 'signup', to: 'user#create'
+  get 'login', to: 'user#login_form'
+  post 'login', to: 'user#login'
+  get '/mermaid', to: 'mermaid#index', as: 'mermaid'
   get 'up' => 'rails/health#show', as: :rails_health_check
+  get '/logout', to: 'user#logout', as: :logout
 
 
-  get '/mermaid', to: 'mermaid#index'
 end

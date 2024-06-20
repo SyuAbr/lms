@@ -6,6 +6,6 @@ export default class extends Controller {
     }
 
     start() {
-        window.location.href = "/registration"
+        window.location.href = "/user"
     }
 }

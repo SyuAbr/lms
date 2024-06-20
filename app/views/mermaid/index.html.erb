@@ -1,5 +1,8 @@
-<div data-controller="mermaid" class="w-full">
-   <pre class="mermaid w-full h-full " data-mermaid-target="diagram">
-      <%= generate_mermaid nil %>
+<div data-controller="mermaid" class="w-full" data-mermaid-user-id-value="<%= @current_user%>">
+  <pre class="mermaid w-full h-full" data-mermaid-target="diagram">
+    <%= generate_mermaid(@data, @current_user) %>
+    <%= generate_mermaid1(@data, @current_user) %>
+
   </pre>
+  <%= link_to 'Выйти', logout_path, turbo_method: :delete, class: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" %>
 </div>

@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_21_153015) do
   create_table "permissions", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "task_id", null: false
-    t.boolean "access_granted", null: false
+    t.string "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["task_id"], name: "index_permissions_on_task_id"
@@ -34,11 +34,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_21_153015) do
 
   create_table "tasks", force: :cascade do |t|
     t.text "title", null: false
-    t.text "descriptipn", null: false
-    t.integer "grade", null: false
-    t.integer "deadline", null: false
+    t.text "task_type", null: false
+    t.integer "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["id"], name: "index_tasks_on_id"
   end
 
   create_table "users", force: :cascade do |t|

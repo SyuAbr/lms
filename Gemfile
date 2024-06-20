@@ -75,3 +75,4 @@ end
 
 gem "tailwindcss-rails"
 gem "mermaid"
+gem 'cancancan'

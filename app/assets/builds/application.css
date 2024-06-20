@@ -926,7 +926,7 @@ video {
 }
 
 .open > g > polygon {
-  fill: #f57059 !important;
+  fill: #ffff01 !important;
   stroke: #000000 !important;
   stroke-width: 2px !important;
 }
@@ -938,7 +938,7 @@ video {
 }
 
 .open > g > circle {
-  fill: #f57059 !important;
+  fill: #ffff01 !important;
   stroke: #000000 !important;
   stroke-width: 2px !important;
 }
@@ -962,6 +962,11 @@ video {
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
